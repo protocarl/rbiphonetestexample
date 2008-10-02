@@ -7,9 +7,19 @@
 //
 
 #import "Book.h"
-
+#import "Author.h"
 
 @implementation Book
+
+- (id)initWithAuthorString:(NSString *)authorString
+{
+  if(self = [super init])
+  {
+    author = [[Author alloc] initWithString:authorString];
+  }
+  
+  return self;
+}
 
 @end
 

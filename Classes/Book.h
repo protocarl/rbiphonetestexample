@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Author;
 
 @interface Book : NSObject {
-
+  Author *author;
 }
 
 @end
