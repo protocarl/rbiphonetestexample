@@ -11,6 +11,18 @@
 
 @implementation Author
 
+@synthesize name;
+
+- (id)initWithString:(NSString *)aString
+{
+  if(self = [super init])
+  {
+    self.name = aString;
+  }
+  
+  return self;
+}
+
 @end
 
 // This initialization function gets called when we import the Ruby module.

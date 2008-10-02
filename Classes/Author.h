@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Author : NSObject {
-
+  NSString *name;
 }
-
+@property (readwrite,copy) NSString *name;
 @end
